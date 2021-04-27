@@ -7,17 +7,17 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import mehdi.sakout.fancybuttons.FancyButton
 
-class third : AppCompatActivity() {
+class eight : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_third)
-        var  next= findViewById<FancyButton>(R.id.btn_next4)
+        setContentView(R.layout.activity_eight)
+        var  next= findViewById<FancyButton>(R.id.btn_next9)
         var  back= findViewById<ImageView>(R.id.left_icon)
 
 
 
-       next.setOnClickListener {
-            var intent = Intent(this, four::class.java)
+        next.setOnClickListener {
+            var intent = Intent(this,nine::class.java)
             startActivity(intent)
 
         }

@@ -1,22 +1,31 @@
 package com.example.cat
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import kotlinx.android.synthetic.main.activity_fristquation.*
-import kotlinx.android.synthetic.main.activity_second.*
+import android.widget.ImageView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import mehdi.sakout.fancybuttons.FancyButton
 
 class second : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
-        val start = findViewById(R.id.next3) as Button
-        next3.setOnClickListener {
-            val intent = Intent(this, third::class.java).apply {
-                startActivity(intent)
-            }
+        var  next= findViewById<FancyButton>(R.id.btn_next3)
+        var  back= findViewById<ImageView>(R.id.left_icon)
+
+
+
+        next.setOnClickListener {
+            var intent = Intent(this,third::class.java)
+            startActivity(intent)
+
+        }
+
+        back.setOnClickListener {
+            Toast.makeText(this,"Back", Toast.LENGTH_SHORT).show()
 
         }
     }
 }
+

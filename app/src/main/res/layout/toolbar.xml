@@ -12,12 +12,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/left_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_margin="@dimen/_12sdp"
+        android:src="@drawable/back" />
 
     <TextView
-        android:layout_margin="@dimen/_4sdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="CAT"
-        android:textSize="28dp" />
+        android:textStyle="bold"
+
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_18sdp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

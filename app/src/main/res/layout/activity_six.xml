@@ -4,40 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".third">
-
-    <include
-        android:id="@+id/include3"
-        layout="@layout/toolbar" />
-
+    tools:context=".six">
+    <include layout="@layout/toolbar"
+        android:id="@+id/include6"/>
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_que"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" does s/he appear to notice unusual details that others miss?"
+        android:text=" does s/he fine it easy to interact with other children?"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include3"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/include6" />
 
     <ImageView
-        android:id="@+id/third"
-        android:layout_width="@dimen/_300sdp"
-        android:layout_height="@dimen/_200sdp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/proj1"
+        android:id="@+id/six"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/proo1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_que" />
+
     <TextView android:id="@+id/TV_YES"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="1- Yes"
-       android:textSize="24dp"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1- Yes"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/six"
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginRight="@dimen/_100sdp" />
 
@@ -54,9 +51,8 @@
 
 
 
-
     <mehdi.sakout.fancybuttons.FancyButton
-        android:id="@+id/btn_next4"
+        android:id="@+id/btn_next7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="next"
@@ -68,7 +64,6 @@
         android:layout_margin="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

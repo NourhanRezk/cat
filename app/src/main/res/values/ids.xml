@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="left_icon" type="id" />
+    <item name="profile_image2" type="id" />
+    <item name="ln_month" type="id" />
+    <item name="years" type="id" />
 </resources>
