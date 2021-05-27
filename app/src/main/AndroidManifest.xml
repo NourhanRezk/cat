@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cat">
+    <uses-permission android:name="android.permission.INTERNET" />
+
 
     <application
         android:allowBackup="true"
@@ -9,26 +11,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ten"></activity>
-        <activity android:name=".nine" />
-        <activity android:name=".eight" />
-        <activity android:name=".seven" />
-        <activity android:name=".six" />
-        <activity android:name=".five" />
-        <activity android:name=".four" />
-        <activity android:name=".select" />
-        <activity android:name=".choose_Age" />
-        <activity android:name=".third" />
-        <activity android:name=".second" />
-        <activity android:name=".fristquation" />
-        <activity android:name=".chooseAge" />
-        <activity android:name=".MainActivity">
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/border" />
+
+        <activity android:name=".Result" />
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Tool_bar" />
+        <activity android:name=".Ten" />
+        <activity android:name=".Nine" />
+        <activity android:name=".Eight" />
+        <activity android:name=".Seven" />
+        <activity android:name=".Six" />
+        <activity android:name=".Five" />
+        <activity android:name=".Four" />
+        <activity android:name=".Select" />
+        <activity android:name=".Third" />
+        <activity android:name=".Second" />
+        <activity android:name=".FirstQuestion" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

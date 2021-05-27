@@ -4,21 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
     tools:context=".MainActivity">
-    <include layout="@layout/toolbar" />
+
+    <include layout="@layout/activity_tool_bar" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_80sdp"
         android:src="@drawable/download"
         app:civ_border_color="#FF000000"
         app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingClass,MissingConstraints"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="@dimen/_80sdp"/>
+        tools:ignore="MissingClass,MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_name"
@@ -26,17 +28,18 @@
         android:layout_height="wrap_content"
         android:text="CAT"
         android:textSize="30dp"
+        android:textColor="#387c6d"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_image"
-       />
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Children Alzahimer Test"
-        android:textSize="30dp"
         android:layout_marginTop="20dp"
+        android:text="Children  AutismTest"
+        android:textSize="30dp"
+        android:textColor="#387c6d"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,13 +51,13 @@
         android:id="@+id/btn_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
         android:text="start"
         android:textSize="30dp"
-        android:paddingEnd="@dimen/_20sdp"
-        android:paddingStart="@dimen/_20sdp"
+        app:fb_defaultColor="#387c6d"
         app:fb_radius="@dimen/_16sdp"
-        app:fb_defaultColor="@color/colorAccent"
-        android:layout_margin="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

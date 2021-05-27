@@ -4,6 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ten">
+    android:background="@android:color/background_light"
+    tools:context=".Ten">
+
+    <include
+        android:id="@+id/include9"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_que"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Does s/he have friends,rather than just acquaintances ? "
+        android:textColor="#387c6d"
+        android:padding="@dimen/_20sdp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include9" />
+
+    <ImageView
+        android:id="@+id/ten"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/children"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_que" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ten">
+
+        <RadioButton
+            android:id="@+id/btn_TenYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_100sdp"
+            android:buttonTint="#387c6d"
+            android:text="Yes"
+            android:textColor="#387c6d"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/btn_TenNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:buttonTint="#387c6d"
+            android:textColor="#387c6d"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:text="finish"
+        android:textSize="30dp"
+        app:fb_defaultColor="#387c6d"
+        app:fb_radius="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

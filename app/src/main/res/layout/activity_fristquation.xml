@@ -4,54 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fristquation">
+    android:background="@android:color/background_light"
+    tools:context=".FirstQuestion">
 
     <include
         android:id="@+id/include"
-        layout="@layout/toolbar" />
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
         android:id="@+id/textView4"
+        android:textColor="#387c6d"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="@dimen/_20sdp"
         android:text="Does s/he come up to you spontaneously for chat ?"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toBottomOf="@+id/include" />
 
     <ImageView
         android:id="@+id/frist"
-        android:layout_width="320dp"
-        android:layout_height="320dp"
-        android:src="@drawable/frist"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/baby"
+        android:layout_margin="@dimen/_20sdp"
         app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
-    <TextView android:id="@+id/TV_YES"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1- Yes"
-        android:textSize="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/frist"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:layout_marginRight="@dimen/_100sdp" />
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <RadioGroup
+        android:id="@+id/btn_radiogroup"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2- No"
-        android:textSize="24dp"
+        android:layout_margin="@dimen/_16sdp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/TV_YES"
+
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:layout_marginRight="@dimen/_100sdp"/>
+        app:layout_constraintTop_toBottomOf="@id/frist">
+
+        <RadioButton
+            android:id="@+id/btn_FristYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_100sdp"
+            android:text="Yes"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="#387c6d"
+            android:textSize="@dimen/_18sdp"
+            android:buttonTint="#387c6d"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/btn_FristNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:buttonTint="#387c6d"
+            android:textColor="#387c6d"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+       </RadioGroup>
+
+
 
 
 
@@ -60,15 +83,15 @@
         android:id="@+id/btn_next2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
         android:text="next"
         android:textSize="30dp"
-        android:paddingEnd="@dimen/_20sdp"
-        android:paddingStart="@dimen/_20sdp"
+        app:fb_defaultColor="#387c6d"
         app:fb_radius="@dimen/_16sdp"
-        app:fb_defaultColor="@color/colorAccent"
-        android:layout_margin="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

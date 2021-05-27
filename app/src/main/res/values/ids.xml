@@ -4,4 +4,5 @@
     <item name="profile_image2" type="id" />
     <item name="ln_month" type="id" />
     <item name="years" type="id" />
+    <item name="btn_no" type="id" />
 </resources>
