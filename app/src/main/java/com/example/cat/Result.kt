@@ -16,18 +16,17 @@ class Result : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
         var back = findViewById<ImageView>(R.id.left_icon)
-
-
         val retrofit = RetrofitBuilder().getRetrofit()
         val service = retrofit.create(ApiService::class.java)
         val call = service.getResult(ResultRequest())
+
         call.enqueue(object : Callback<ResultResponse> {
             override fun onResponse(
                 call: Call<ResultResponse>,
                 response: Response<ResultResponse>
             ) {
                 if (response.code() == 200) {
-                    val weatherResponse = response.body()!!
+                    val ResultResponse  = response.body()!!
 
                 }
             }
@@ -36,6 +35,10 @@ class Result : AppCompatActivity() {
 
             }
         })
+
+
+
+
 
         back.setOnClickListener {
             finish()

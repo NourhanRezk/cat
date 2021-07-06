@@ -18,7 +18,7 @@
         android:id="@+id/tv_que"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Does s/he like to do things over and over agin,in the same way all the time?"
+        android:text="It is important to him/her to fit in with the peer group?"
         android:textSize="24dp"
         android:padding="@dimen/_20sdp"
         android:textColor="#387c6d"

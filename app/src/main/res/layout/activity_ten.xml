@@ -18,7 +18,7 @@
         android:id="@+id/tv_que"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Does s/he have friends,rather than just acquaintances ? "
+        android:text="Does s/he find it easy to interact with with other children? "
         android:textColor="#387c6d"
         android:padding="@dimen/_20sdp"
         android:textSize="20dp"

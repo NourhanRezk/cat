@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="@dimen/_20sdp"
-        android:text="Does s/he come up to you spontaneously for chat ?"
+        android:text="Does s/he jion in playing games with other children easily ?"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

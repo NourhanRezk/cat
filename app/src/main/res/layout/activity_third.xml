@@ -15,7 +15,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Does s/he appear to notice unusual details that others miss?"
+        android:text="Was s/he speaking by 2 years?"
         android:textSize="24dp"
         android:textColor="#387c6d"
         android:padding="@dimen/_20sdp"

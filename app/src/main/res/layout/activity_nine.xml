@@ -18,7 +18,7 @@
         android:id="@+id/tv_que"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Does s/he mostly have  difficulty understanding the rules for polite behavior? "
+        android:text="Does s/he like to do things over and over again in the same way all time? "
         android:textColor="#387c6d"
         android:textSize="20dp"
         android:padding="@dimen/_20sdp"

@@ -10,7 +10,8 @@ class RetrofitBuilder {
             .baseUrl("https://github.com/user/repo.git")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-    }
+
+     }
 
 
-}
+ }
