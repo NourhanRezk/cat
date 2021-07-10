@@ -7,7 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cat.Select.Companion.questionList
 import com.example.cat.webservices.Model
-import kotlinx.android.synthetic.main.activity_second.*
+import kotlinx.android.synthetic.main.activity_fristquation.*
 import mehdi.sakout.fancybuttons.FancyButton
 
 class FirstQuestion : AppCompatActivity() {
@@ -18,10 +18,10 @@ class FirstQuestion : AppCompatActivity() {
         var  next= findViewById<FancyButton>(R.id.btn_next2)
         var  back= findViewById<ImageView>(R.id.left_icon)
         var flag=0
-        btn_SecondYes.setOnCheckedChangeListener { compoundButton, b ->
+        btn_FristYes.setOnCheckedChangeListener { compoundButton, b ->
             flag=1
         }
-        btn_SecondNo.setOnCheckedChangeListener { compoundButton, b ->
+        btn_FristNo.setOnCheckedChangeListener { compoundButton, b ->
             flag=2
         }
 

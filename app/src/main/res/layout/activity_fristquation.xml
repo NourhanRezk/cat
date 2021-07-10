@@ -53,13 +53,13 @@
         <RadioButton
             android:id="@+id/btn_FristYes"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/_100sdp"
-            android:text="Yes"
+            android:layout_height="22dp"
             android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_100sdp"
+            android:buttonTint="#387c6d"
+            android:text="Yes"
             android:textColor="#387c6d"
             android:textSize="@dimen/_18sdp"
-            android:buttonTint="#387c6d"
             android:textStyle="bold" />
 
         <RadioButton

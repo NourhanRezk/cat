@@ -7,7 +7,7 @@ class RetrofitBuilder {
 
     fun getRetrofit():Retrofit{
         return  Retrofit.Builder()
-            .baseUrl("https://github.com/user/repo.git")
+            .baseUrl("https://github.com/user/repo.git/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

@@ -26,10 +26,15 @@
         android:padding="@dimen/_20sdp"
         />
     <TextView
+        android:gravity="center"
         android:id="@+id/tv_res"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
         android:layout_width="@dimen/_300sdp"
         android:layout_height="@dimen/_100sdp"
         android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/colorPrimary"
+        android:text="121212121"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Tv_result"
